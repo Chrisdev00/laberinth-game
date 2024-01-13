@@ -33,27 +33,12 @@ var escenario = [
 ]
 
 function dibujaEscenario () {
-
-    var color;
-
+    
     for (y = 0; y < 12; y++) {
         for (x = 0; x < 19; x++) {
             
             var tile = escenario[y][x];
-            ctx.drawImage(tileMap, tile*32,0,32,32, anchoF*x, altoF*y, anchoF, altoF)
-            
-            
-            // if (escenario[y][x] == 0)
-            //     color = muro;
-            // if (escenario[y][x] == 1)
-            //     color = puerta;
-            // if (escenario[y][x] == 2)
-            //     color = tierra;
-            // if (escenario[y][x] == 3)
-            //     color = llave;
-
-            // ctx.fillStyle = color
-            // ctx.fillRect(x*anchoF, y*altoF ,anchoF, altoF)
+            ctx.drawImage(tileMap, tile*32,0,32,32, anchoF*x, altoF*y, anchoF, altoF);           
         }
     }
 }
